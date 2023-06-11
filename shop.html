@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>shop</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="pic/logo.jpg" width="90" /></div>
+        <div class="header-right">
+            <a href="login.html"><img src="pic/member.png"></a>
+            <select name="city" onchange="javascript:location.href=this.value;" class="selectType">
+              <option>詳細資訊</option>
+                <option value="cart.html">購物車-</option>
+                <option value="index.html">首頁</option>
+                <option value="shop.html">商店</option>
+                <option value="aboutUs.html">關於我們</option>
+                <option value="member.html">會員資料</option>
+            </select>
+        </div>
+      </header>
+      <div class="alert alert-info" style="overflow:hidden;">
+        <div class="marquee">
+            <div>
+                各類車款熱賣中!!
+            </div>
+        </div>
+      </div>
+      <div id="WRAPPER1">
+
+          <div id="SIDE">
+              <h1>車種類別</h1>
+              <label class="container">轎車
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">休旅車
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">性能跑車
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+        
+                <form class="example" action="action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                
+          </div>
+       
+            <div id="CONTENT">
+          
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                          <img src="image/2023 Porsche 911 Targa 4 GTS 1.jpeg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2> Porsche 911 Targa 4 GTS</h2>
+                            <p class="title">NT$9860000</p>
+                            <a href="2023 Porsche 911 Targa 4 GTS.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/Aston Martin Vantage 4.0 V8 1.jpg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>Aston Martin Vantage 4.0 V8</h2>
+                            <p class="title">NT$8800000</p>
+                            <a href="Aston Martin Vantage 4.0 V8.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/Bentley Flying Spur 4.0 V8 1.jpeg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>Bentley Flying Spur 4.0 V8</h2>
+                            <p class="title">NT$13300000 </p>
+                            <a href="Bentley Flying Spur 4.0 V8.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/BMW 3-Series Sedan M3 Competition M xDrive 1.jpeg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>BMW 3-Series Sedan M3 </h2>
+                            <p class="title">NT$5860000</p>
+                            <a href="BMW 3-Series Sedan M3 Competition M xDrive.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/Ferrari F8 Spider V8 1.jpeg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>Ferrari F8 Spider V8</h2>
+                            <p class="title">NT$16280000</p>
+                            <a href="Ferrari F8 Spider V8.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/GLC Coupe.jpg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>M-Benz GLC Coupe </h2>
+                            <p class="title">NT$3880000</p>
+                            <a href="GLC Coupe.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/Lamborghini Urus S 4.0 V8 1.jpeg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>Lamborghini Urus S 4.0 V8</h2>
+                            <p class="title">NT$11980000</p>
+                            <a href="Lamborghini Urus.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/Land Rover Range Rover P530 SV LWB 1.jpeg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2> Range Rover P530 SV LWB</h2>
+                            <p class="title">NT$9450000</p>
+                            <a href="Land Rover Range Rover P530 SV LWB.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/Lexus LS 500h 1.jpeg" alt="t-shirt" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>Lexus LS 500h旗艦版</h2>
+                            <p class="title">NT$5000000</p>
+                            <a href="Lexus LS 500h.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/M-Benz G-Class AMG G63 1.jpeg" alt="shirt" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>M-Benz G-Class AMG G63</h2>
+                            <p class="title">NT$9370000</p>
+                            <a href="M-Benz G-Class AMG G63.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/Mercedes-Maybach S-Class Night Series 1.jpeg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h2>Mercedes-Maybach S580</h2>
+                            <p class="title">NT$12050000</p>
+                            <a href="Mercedes-Maybach S-Class Night Series S580.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <img src="image/Toyota GR Supra 3.0T Premium 1.jpeg" alt="car" style="width:100%;height:200px;">
+                          <div class="container2">
+                            <h3>Toyota GR Supra 3.0T Premium</h3>
+                            <p class="title">NT$2560000</p>
+                            <a href="Toyota GR Supra 3.0T Premium.html"><input type="button" class="button2"value="更多資訊"></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+</body>
+</html>

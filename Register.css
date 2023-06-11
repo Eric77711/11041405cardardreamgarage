@@ -1,0 +1,184 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif ;
+  background: url(image/Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-style: italic;
+
+  }
+
+  header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.8);;
+  }
+  
+  .logo {
+      width: 100%;
+  }
+  
+  .dropdownlist {
+      width: 150px;
+  }
+  
+  .header-right {
+      display: flex;
+      align-items: center;
+  }
+    
+  .selectType {
+    background: #003d79;
+    color: #fafafa;
+    margin: 15px;
+    width: 300px;
+    height: 3em;
+    padding: 8px;
+    position: relative;
+    border-radius: 5px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(#003d79, #003d79);
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), -webkit-linear-gradient(#003d79, #003d79);
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), -moz-linear-gradient(#003d79, #003d79);
+    background-position: right 0.5em top 50%, 0 0;
+    background-size: contain, cover;
+    background-repeat: no-repeat, repeat;
+  }
+  .RegisterForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 200px;
+    }
+  .form {    
+    background-color:rgba(255, 255, 255, 0.8);
+    width: 600px;
+    padding: 20px 40px;
+    border-radius: 50px;
+  }
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .Container {
+    position: relative;
+    height: 45px;
+    width: 500px;
+    margin-bottom:20px;
+  }
+  
+
+  .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #0a4ecc;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 0px;;
+    outline:none ;
+    background:none ;/*移除背景*/
+    z-index: 1;
+  }
+  /*把a設為透明*/
+  ::placeholder {
+    color:transparent;
+  }
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color:rgba(255, 255, 255, 0.8);
+    color: #0a4ecc;
+    font-size: 16px;
+    transition: 0.5s;/*標籤往上移動速度*/
+    z-index: 0;
+  }
+  .submitBottom{
+    display: block;
+    margin-left: auto;
+    padding: 18px 30px;
+    border: none;
+    background-color: #0a4ecc;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  /*設置提交按鈕鍵*/
+  .submitBottom:hover {
+    background-color:  #cc470a;
+    transform: translateY(-3px);/*向上移動*/
+  }
+/*輸入字段當焦點，選擇器會設為標籤設置樣式。
+將標籤向上和向左移動，增加字體大小和字體粗細，並更改字體顏色。*/
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 500;
+    color:  #0a4ecc;
+  }
+/*輸入字段為焦點，添加顏色邊框*/
+  .input:focus {
+    border: 5px solid  #0a4ecc;
+  }
+  /*當輸入字段不為空時標籤保持浮動，選擇器為標籤設置樣式。*/
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;/*讓物件向上移動*/
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.logo {
+    width: 100%;
+}
+
+.dropdownlist {
+    width: 150px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);;
+}
+  
+
+  
+  
+  
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="pic/logo.jpg" width="90" /></div>
+      <div class="header-right">
+        <a href="login.html"><img src="pic/member.png" /></a>
+        <select name="city" onchange="javascript:location.href=this.value;" class="selectType">
+          <option>詳細資訊</option>
+          <option value="cart.html">購物車-</option>
+          <option value="index.html">首頁</option>
+          <option value="shop.html">商店</option>
+          <option value="aboutUs.html">關於我們</option>
+          <option value="member.html">會員資料</option>
+        </select>
+      </div>
+    </header>
+
+    <article>
+      <h1>購物車</h1>
+
+      <section>
+        <h2>商品列表</h2>
+        <div>
+          <div class="product">
+            <img src="image/GLC Coupe.jpg"/>
+            <div>
+              <h3>M-Benz GLC Coupe AMG GLC43 4MATIC</h3>
+              <p>價格: 3880000 NTD</p>
+              <p>數量</p>
+              <input type="button" onclick="if (this.form.amount.value&gt;0) this.form.amount.value--" class="button" value="-">
+            <input type="text" value="1" class="itemcount" id="itemcount" name="amount">
+            <input type="button" onclick="this.form.amount.value++" class="button" value="+">
+            <button>從購物車刪除</button>
+            </div>
+          </div>
+          
+      </section>
+    </article>
+
+    <aside>
+      <div>
+        <h2>購物車</h2>
+        <div id="cart-items"></div>
+        <div class="total">總金額: 3880000</span></div>
+        <button onclick="checkout()">結帳</button>
+      </div>
+    </aside>
+
+    <script>
+      var cartItems = [];
+      var totalPrice = 0;
+
+      function checkout() {
+        alert("感謝您的購買!");
+
+        
+      }
+    </script>
+
+    <footer>
+      <p>
+        版權<br />
+        powered by CYCU_IM<br />
+        @2023-6-1
+      </p>
+      <div class="header-right">
+        <img src="pic/fb.png" width="40" /><img src="pic/instagram.png" width="40" /><img src="pic/line.png" width="40" />
+      </div>
+    </footer>
+  </body>
+</html>

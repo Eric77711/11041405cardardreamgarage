@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="pic/logo.jpg" width="90" /></div>
+        <div class="header-right">
+            <a href="login.html"><img src="pic/member.png"></a>
+            <select name="city" onchange="javascript:location.href=this.value;" class="selectType">
+                <option>詳細資訊</option>
+                <option value="cart.html">購物車-</option>
+                <option value="index.html">首頁</option>
+                <option value="shop.html">商店</option>
+                <option value="aboutUs.html">關於我們</option>
+                <option value="member.html">會員資料</option>
+            </select>
+        </div>
+      </header>
+
+    <div class="container">
+        <h1><span>個人資料</span></h1>
+        <div class="member-card">
+           
+                    <form>
+                        <div class="row">
+                            <label for="sex">稱謂:</label>
+                            <select name="sex" id="sex" required-aria-label="稱謂">
+                                <option value="mr">先生</option>
+                                <option value="mrs">小姐</option>
+                            </select><br>
+                        </div>
+                        <div class="row">
+                            <label for="name" style="text-align:right;">會員名稱:</label>
+                            <input type="text" id="username" name="username" value="陳大明"><br>
+                        </div>
+                        <div class="row">
+                            <label for="email" style="text-align:right;"></label>電子郵件:</label>
+                            <input type="email" id="emailinput" name="email" value="er123@gmail.com" ><br>
+                        </div>
+                        <div class="row">
+                            <label for="address" style="text-align:right;"></label>地址:</label>
+                            <input type="text" id="addressInput" name="address" value="桃園市中壢區中北路"  ><br>
+                        </div>
+                        <div class="row">
+                            <label for="phonenumber" style="text-align:right;"></label>手機電話:</label>
+                            <input type="phonenumber" name="phonenumber" id="phonenumberInput" value="09-xxxxxxxx" ><br>
+                        </div>
+                        <div class="row">
+                            <label for="birthday" name="birthday" style="text-align:right;"></label>生日(西元年月日):</label>
+                            <input type="birthday" name="birthday" id="birthdayInput" value="2002/09/02"><br>
+                        </div>
+                        <div class="row">
+                            <label for="description" style="text-align:right;"></label>個人留言：</label>
+                            <textarea name="description" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit">更新個人資料</button>
+                    </form> 
+        </div>
+    </div>
+
+    
+</body>
+</html>
